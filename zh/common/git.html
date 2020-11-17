@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GitFlow工作流指南 | INT开发在线文档</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/vuepress/assets/img/int_logo.jpg">
+    <meta name="description" content="INT. Software Group. Markdown Docs System with vuepress.">
+    
+    <link rel="preload" href="/vuepress/assets/css/0.styles.2fdabee1.css" as="style"><link rel="preload" href="/vuepress/assets/js/app.5ba6b1e2.js" as="script"><link rel="preload" href="/vuepress/assets/js/2.6fba4dc5.js" as="script"><link rel="preload" href="/vuepress/assets/js/9.f31f3965.js" as="script"><link rel="prefetch" href="/vuepress/assets/js/10.518773ce.js"><link rel="prefetch" href="/vuepress/assets/js/11.688b74a3.js"><link rel="prefetch" href="/vuepress/assets/js/12.fc8a6ea8.js"><link rel="prefetch" href="/vuepress/assets/js/13.740fc501.js"><link rel="prefetch" href="/vuepress/assets/js/14.1660890d.js"><link rel="prefetch" href="/vuepress/assets/js/15.00ff92d7.js"><link rel="prefetch" href="/vuepress/assets/js/16.ad2c8f92.js"><link rel="prefetch" href="/vuepress/assets/js/3.0277475e.js"><link rel="prefetch" href="/vuepress/assets/js/4.09fd2c39.js"><link rel="prefetch" href="/vuepress/assets/js/5.fc791712.js"><link rel="prefetch" href="/vuepress/assets/js/6.ffe6f60a.js"><link rel="prefetch" href="/vuepress/assets/js/7.4bcf017a.js"><link rel="prefetch" href="/vuepress/assets/js/8.35a5d9a4.js">
+    <link rel="stylesheet" href="/vuepress/assets/css/0.styles.2fdabee1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress/" class="home-link router-link-active"><!----> <span class="site-name">INT开发在线文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vuepress/zh/guide/" class="nav-link">
+  技术文档
+</a></div><div class="nav-item"><a href="/vuepress/zh/changeLog/" class="nav-link">
+  ChangeLog
+</a></div><div class="nav-item"><a href="http://www.nj-int.com.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  INT官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepress/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vuepress/zh/guide/" class="nav-link">
+  技术文档
+</a></div><div class="nav-item"><a href="/vuepress/zh/changeLog/" class="nav-link">
+  ChangeLog
+</a></div><div class="nav-item"><a href="http://www.nj-int.com.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  INT官网
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vuepress/" aria-current="page" class="sidebar-link">Home</a></li><li><a href="/vuepress/zh/guide/" class="sidebar-link">阅读指导</a></li><li><a href="/vuepress/zh/java/ems/INT-eEMS架构设计文档.html" class="sidebar-link">能源管理设计文档</a></li><li><a href="/vuepress/zh/common/git.html" aria-current="page" class="active sidebar-link">GitFlow工作流指南</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress/zh/common/git.html#项目经理" class="sidebar-link">项目经理：</a></li><li class="sidebar-sub-header"><a href="/vuepress/zh/common/git.html#小组开发人员" class="sidebar-link">小组开发人员：</a></li></ul></li><li><a href="/vuepress/zh/changeLog/" class="sidebar-link">最近更新</a></li><li><section class="sidebar-group depth-0"><a href="/vuepress/zh/css/" class="sidebar-heading clickable"><span>美丽的css</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress/zh/css/css-aaa.html" class="sidebar-link">css-aaa</a></li><li><a href="/vuepress/zh/css/css-bbb.html" class="sidebar-link">css-bbb</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="gitflow工作流指南"><a href="#gitflow工作流指南" class="header-anchor">#</a> GitFlow工作流指南</h1> <h2 id="项目经理"><a href="#项目经理" class="header-anchor">#</a> 项目经理：</h2> <ol><li><p>在git等远程仓库中创建项目，并且初始化项目，即完成master分支在远程的创建。</p></li> <li><p>git clone拉取代码至本地，完成本地master分支的创建。</p></li> <li><p>基于head的master分支创建develop分支</p></li> <li><p>切换至develop，推送至远程仓库</p></li></ol> <h2 id="小组开发人员"><a href="#小组开发人员" class="header-anchor">#</a> 小组开发人员：</h2> <ol><li><p>clone项目至本地仓库，自动在本地创建master分支代码</p></li> <li><p>切换至远程develop分支，创建本地develop分支</p></li> <li><p>基于develop创建功能分支，并切换至功能分支</p></li> <li><p>进行开发，代码提交、推送</p></li> <li><p>在远程仓库界面中将功能分支创建合并请求至develop分支</p></li> <li><p>项目经理确认合并请求完成功能分支合并至develop分支。</p></li></ol> <p>当develop分支开发到一定阶段后，将develop分支进行合并创建预发布版本（由需要进行发布的组员操作）</p> <ol><li><p>切换至develop分支，进行代码拉取</p></li> <li><p>在本地仓库基于develop分支创建预发布分支（如release-1.0.0）</p></li> <li><p>推送至远程仓库</p></li> <li><p>创建合并请求至远程仓库的master分支</p></li> <li><p>项目经理确认合并master分支请求</p></li></ol> <p>切换至本地master分支，进行打标签</p> <ol><li>切换至本地master分支</li> <li>拉取项目代码</li> <li>基于master分支创建标签（注意标签名称，版本语义规范，如1.0.0-RELEASE）</li> <li>推送至远程仓库</li></ol> <p>如果1.0.0-RELEASE该版本有bug</p> <ol><li>在远程仓库界面中创建Issues，并记住#后面的数字</li> <li>修复bug的组员基于有bug的发行标签版本1.0.0-RELEASE创建修复版本（hotfix_0004，此处4为上步记住的数字）</li> <li>修复bug，提交并推送</li> <li>创建合并请求至远程仓库的master</li> <li>项目经理确认合并master分支请求</li> <li>组员进master分支进行拉取</li> <li>创建新版标签1.0.1-RELEASE</li> <li>推送至远程仓库</li> <li>删除本地仓库及远程仓库的功能分支、预发布分支、hotfix分支</li> <li>完成。</li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">11/16/2020, 11:24:30 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vuepress/zh/java/ems/INT-eEMS架构设计文档.html" class="prev">
+        能源管理设计文档
+      </a></span> <span class="next"><a href="/vuepress/zh/changeLog/">
+        最近更新
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress/assets/js/app.5ba6b1e2.js" defer></script><script src="/vuepress/assets/js/2.6fba4dc5.js" defer></script><script src="/vuepress/assets/js/9.f31f3965.js" defer></script>
+  </body>
+</html>
