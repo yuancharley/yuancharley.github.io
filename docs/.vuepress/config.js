@@ -10,6 +10,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/assets/img/int_logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
   plugins: [],
+  base: '/docs',
   title: 'INT开发在线文档',
   description: 'INT. Software Group. Markdown Docs System with vuepress.',
   /*locales: {
@@ -35,10 +36,30 @@ module.exports = {
       '/',
       '/zh/guide/',
       '/zh/java/ems/INT-eEMS架构设计文档',
-      '/zh/changeLog/'
+      '/zh/common/git',
+      '/zh/changeLog/',
+      {
+        title: '美丽的css',
+        path: '/zh/css/',
+        collapsable: false,
+        sidebarDepth: 1,
+        children: [
+          '/zh/css/css-aaa',
+          '/zh/css/css-bbb'
+        ]
+      }
     ],
+    /*sidebar: {
+      '/zh/css/': [
+        'css-aaa',
+        'css-bbb'
+      ],
+      '/zh/guide/': [
+        ''
+      ]
+    },*/
     sidebarDepth: 2,
-    lastUpdated: 'Last Updated',
+    lastUpdated: '更新时间',
     /*locales: {
       '/': {
         selectText: 'Languages',
