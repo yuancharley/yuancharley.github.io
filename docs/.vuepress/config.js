@@ -10,7 +10,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/assets/img/int_logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
   plugins: [],
-  base: '/docs',
+  base: '/',
   title: 'INT开发在线文档',
   description: 'INT. Software Group. Markdown Docs System with vuepress.',
   /*locales: {
